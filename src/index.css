@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RTL Support */
+[dir="rtl"] {
+  .ltr-only {
+    display: none;
+  }
+}
+
+[dir="ltr"] {
+  .rtl-only {
+    display: none;
+  }
+}
+
+/* RTL specific styles */
+[dir="rtl"] {
+  .reverse-flex {
+    flex-direction: row-reverse;
+  }
+  
+  .reverse-text {
+    text-align: right;
+  }
+  
+  .transform-flip {
+    transform: scaleX(-1);
+  }
+}
